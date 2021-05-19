@@ -1,3 +1,5 @@
 from django.db import models
+from djgeojson.fields import PointField
 
-# Create your models here.
+class VillageSpot(models.Model):
+    geom = PointField()

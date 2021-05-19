@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djgeojson',
+    #'djgeojson',
+    'markers.apps.MarkersConfig',
 ]
 
 MIDDLEWARE = [
