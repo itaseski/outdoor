@@ -1313,7 +1313,7 @@ var r1107 = L.polyline(polylinePoints, { color: "#cc00cc" });
 
 //Vlezovi vo Mariovo
 var passIcon = L.icon({
-  iconUrl: "images/pass.png",
+  iconUrl: "{% static 'markers/images/pass.png' %}",
   iconSize: [38, 38],
   iconAnchor: [22, 24],
   popupAnchor: [-3, -56],
@@ -1340,9 +1340,7 @@ var ligurasa = L.marker([41.32026456363233, 21.692844054141364], {
   klin = L.marker([41.29883726055079, 21.784841451836844], {
     icon: passIcon,
   }).bindPopup("Клин"),
-  tribor = L.marker([41.16653177222654, 21.875894457361046], {
-    icon: passIcon,
-  }).bindPopup("Трибор");
+  tribor = L.marker([41.16653177222654, 21.875894457361046]).bindPopup("Трибор");
 
 var passes = L.layerGroup([
   ligurasa,

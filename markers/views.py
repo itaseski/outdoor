@@ -5,4 +5,4 @@ from django.views.generic.base import TemplateView
 class MarkersMapView(TemplateView):
     """Markers map view."""
 
-    template_name = "map.html"
+    template_name = "markers/map.html"
