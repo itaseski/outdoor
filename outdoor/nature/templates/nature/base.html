@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -13,15 +14,85 @@
 
     <title>nature</title>
 
+    <link rel="stylesheet" href="{% static 'nature/css/docs.css' %}">
+
+
 
 </head>
 
 <body>
 
-    <div class="container-xl">
-        {% block content %}
-        {% endblock %}
+    <nav class="navbar navbar-expand-lg ftco-navbar-light">
+        <div class="container-xl">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-compass"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+                </svg>
+                <span class="display-6">Mariovo <small>Directory and Listing</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-lg-8 text-center pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            {% block content %}
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-12 services-wrap">
+                    <div class="row g-3">
+                        <div class="col-md-4 col-lg-2 text-center d-flex align-items-stretch animate__animated animate__bounce animate__fadeInUp">
+                            <h2>Food &amp; Drink</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 
