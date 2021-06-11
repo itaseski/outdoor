@@ -1,0 +1,134 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="bootstrap 5, mariovo, multipurpose">
+    <meta name="author" content="itaseski">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'nature/images/favicon.jpg' %}">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css">
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <!-- Custom Css -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/green.css' %}" rel="stylesheet" id="color-opt">
+
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="20">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light stick navbar-custom">
+        <div class="container-xl">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'nature/images/logo.png' %}" height="50">
+                <span class="fw-lighter h2">Mariovo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar-navlist" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price">Price</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">News</a>
+                    </li>
+                    <!--end nav item-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!--end nav item-->
+                </ul>
+                <!--end navbar nav-->
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!-- Navbar End -->
+
+    {% block hero %}
+    {% endblock %}
+
+    {% block features %}
+    {% endblock %}
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+        -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"></script>
+
+
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+    
+    <script src="js/tiny-slider-init.js "></script>
+    <!-- parallax -->
+    <script src="js/parallax.js"></script>
+    <!-- Counter -->
+    <script src="js/counter.init.js"></script>
+    <!-- Contact -->
+    <script src="js/contact.js"></script>
+    <!-- Icon -->
+    <script src="https://unicons.iconscout.com/release/v3.0.6/script/monochrome/bundle.js"></script>
+    <!-- Switcher Js -->
+    <script src="js/switcher.js"></script>
+    <!-- Main Js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
