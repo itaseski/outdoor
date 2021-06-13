@@ -16,7 +16,10 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 
-    <title>Mariovo</title>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
 
     <!-- favicon -->
     <!-- Favicons -->
@@ -24,7 +27,10 @@
     <link rel="icon" href="{% static 'nature/images/favicons/favicon-16.png' %}" sizes="16x16" type="image/png">
     <link rel="shortcut icon" icon="{% static 'nature/images/favicons/favicon.ico' %}">
 
-    <link rel="stylesheet" href="{% static 'nature/css/docs.css' %}">
+    <link href="{% static 'nature/images/favicons/favicon-32.png' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'nature/css/style.css' %}">
+    <link href="{% static 'nature/css/color/green.css' %}" rel="stylesheet" id="color-opt">
 
 
 
@@ -87,61 +93,122 @@
             <!--end collapse-->
         </div>
     </nav>
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100.000000pt" height="100.000000pt"
-        viewBox="0 0 100.000000 100.000000" preserveAspectRatio="xMidYMid meet">
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="home-slider position-relative" id="home">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item align-items-center active" data-bs-interval="5000"
+                    style="background:url('../../static/nature/images/cover2.jpg') center center;">
+                    <div class="bg-half-260 d-table w-100">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1
+                                            class="heading mb-3 text-white title-dark animate__animated animate__fadeInUpBig animate__delay-1s">
+                                            Let's Explore Awesome Mariovo</h1>
+                                        <p
+                                            class="para-desc text-white-50 para-dark mx-auto animate__animated animate__fadeInUpBig animate__delay-2s">
+                                            Find great places to stay, eat, shop, or visit from local experts.</p>
+                                        <div class="mt-4 pt-2 animate__animated animate__fadeInUpBig animate__delay-3s">
+                                            <a href="javascript:void(0)" class="btn btn-custom me-2 mb-2">Check it
+                                                out</a>
+                                            <a href="javascript:void(0)" class="btn btn-outline-custom mb-2">Buy Now</a>
     
-        <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-            <path d="M104 945 c1 -8 6 -18 11 -22 4 -4 5 -2 1 5 -4 6 -2 12 4 12 6 0 8 5
-    5 10 -9 15 -24 12 -21 -5z" />
-            <path d="M45 940 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0 -7
-    -4 -4 -10z" />
-            <path d="M206 931 c-3 -5 1 -11 9 -15 8 -3 15 -1 15 4 0 13 -18 22 -24 11z" />
-            <path d="M345 930 c3 -5 8 -10 11 -10 2 0 4 5 4 10 0 6 -5 10 -11 10 -5 0 -7
-    -4 -4 -10z" />
-            <path d="M40 899 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10 -5
-    -10 -11z" />
-            <path d="M478 903 c27 -11 9 -22 -44 -29 -31 -3 -52 -9 -47 -13 5 -3 1 -14 -9
-    -23 -10 -10 -18 -15 -18 -12 0 11 -26 -22 -37 -48 -9 -19 -9 -28 -1 -30 8 -3
-    7 -10 -1 -26 -10 -18 -9 -21 4 -16 8 3 12 10 9 15 -3 5 0 9 6 9 8 0 10 -9 5
-    -27 l-6 -27 18 22 c10 13 35 25 57 29 35 5 39 4 33 -12 -6 -13 -3 -16 9 -11
-    12 4 15 2 10 -9 -3 -8 -1 -15 4 -15 6 0 8 -14 5 -31 -4 -19 -2 -28 5 -24 5 3
-    10 1 10 -4 0 -6 -6 -11 -14 -11 -19 0 -28 -14 -20 -33 4 -12 21 -15 73 -14 64
-    2 67 1 57 -16 -9 -16 -19 -18 -61 -12 -27 3 -65 7 -83 9 -17 1 -35 6 -39 9
-    -17 17 -45 5 -57 -25 -14 -33 -11 -62 5 -52 18 11 28 -6 19 -31 -6 -16 -6 -25
-    0 -26 6 -1 14 -2 19 -3 5 0 13 -5 18 -10 4 -5 3 -6 -3 -3 -7 4 -17 0 -24 -8
-    -7 -9 -21 -13 -31 -10 -14 5 -19 1 -19 -12 0 -15 2 -16 10 -3 10 16 12 13 14
-    -20 0 -12 7 -25 15 -29 8 -6 12 -19 9 -35 -5 -22 -2 -26 13 -21 12 4 19 2 19
-    -6 0 -7 3 -10 6 -6 3 3 14 -3 25 -14 19 -19 19 -20 2 -46 -10 -15 -13 -24 -7
-    -21 6 4 11 1 11 -7 0 -16 -11 -11 -46 19 -14 12 -21 14 -16 6 5 -8 -4 -4 -18
-    9 -25 22 -40 18 -17 -5 5 -5 11 -18 13 -29 1 -11 6 -26 10 -33 5 -6 5 -12 1
-    -12 -3 0 1 -11 10 -24 15 -24 15 -24 -27 -31 -44 -8 -77 -29 -77 -52 0 -10 35
-    -13 175 -13 149 0 175 2 183 16 8 15 10 15 15 0 19 -49 52 27 43 97 -18 131
-    -18 150 3 178 12 16 21 32 21 37 0 6 8 12 18 14 22 6 54 123 52 193 -1 28 -1
-    85 0 127 0 56 -4 84 -15 102 -9 13 -12 26 -8 28 4 3 3 3 -4 2 -7 -2 -22 10
-    -33 26 -12 17 -26 30 -31 30 -5 0 -23 10 -38 21 -16 12 -35 19 -43 17 -7 -3
-    -18 2 -25 11 -7 9 -13 11 -13 6 0 -14 -67 -18 -75 -5 -3 5 -14 10 -23 9 -11 0
-    -12 -3 -4 -6z m-7 -96 c-6 -8 -8 -17 -4 -20 3 -4 1 -7 -5 -7 -15 0 -15 13 0
-    28 16 16 23 15 9 -1z m-84 -3 c-3 -3 -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17 -2
-    13 -5z m33 -44 c0 -5 -2 -10 -4 -10 -3 0 -8 5 -11 10 -3 6 -1 10 4 10 6 0 11
-    -4 11 -10z m65 0 c-3 -5 -12 -10 -18 -10 -7 0 -6 4 3 10 19 12 23 12 15 0z
-    m55 -180 c-20 -13 -43 -13 -35 0 3 6 16 10 28 10 18 0 19 -2 7 -10z m207 -132
-    c-2 -13 -4 -5 -4 17 -1 22 1 32 4 23 2 -10 2 -28 0 -40z m-243 -30 c0 -20 -10
-    -47 -20 -60 -18 -24 -20 -24 -38 -7 -11 11 -16 25 -12 35 4 10 2 21 -4 24 -13
-    8 48 50 65 46 6 -2 10 -19 9 -38z m-74 -402 c0 -12 -5 -7 -19 24 -11 24 -11
-    24 3 6 9 -11 16 -24 16 -30z" />
-            <path d="M260 856 c0 -2 8 -10 18 -17 15 -13 16 -12 3 4 -13 16 -21 21 -21 13z" />
-            <path d="M980 851 c0 -7 -4 -9 -10 -6 -5 3 -10 1 -10 -4 0 -6 4 -11 9 -11 13
-    0 25 20 17 27 -3 4 -6 1 -6 -6z" />
-            <path d="M150 802 c0 -5 7 -9 15 -9 8 0 12 4 9 9 -3 4 -9 8 -15 8 -5 0 -9 -4
-    -9 -8z" />
-            <path d="M8 763 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
-            <path d="M75 710 c3 -5 10 -10 16 -10 5 0 9 5 9 10 0 6 -7 10 -16 10 -8 0 -12
-    -4 -9 -10z" />
-            <path d="M240 701 c0 -5 9 -7 20 -4 11 3 20 7 20 9 0 2 -9 4 -20 4 -11 0 -20
-    -4 -20 -9z" />
-            <path d="M290 506 c0 -8 4 -17 9 -20 5 -4 7 3 4 14 -6 23 -13 26 -13 6z" />
-        </g>
-    </svg>
+    
+    
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div>
+                </div>
+                <!--end carousel item-->
+    
+                <div class="carousel-item align-items-center" data-bs-interval="3000"
+                    style="background:url('../../static/nature/images/ligurasa.jpg') center center;">
+                    <div class="bg-half-260 d-table w-100">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1
+                                            class="heading mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">
+                                            We Provide Entries to Mariovo</h1>
+                                        <p
+                                            class="para-desc mx-auto text-white-50 para-dark animated fadeInUpBig animation-delay-7">
+                                            There are several entries to Mariovo region by vehicles,
+                                            some well known some not so known and some unknown.</p>
+                                        <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-11">
+                                            <a href="javascript:void(0)" class="btn btn-custom me-2 mb-2">About us</a>
+                                            <a href="javascript:void(0)" class="btn btn-outline-custom mb-2">Contact
+                                                us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div>
+                </div>
+                <!--end carousel item-->
+    
+                <div class="carousel-item align-items-center" data-bs-interval="3000"
+                    style="background:url('../../static/nature/images/reka.jpg') center center;">
+                    <div class="bg-half-260 d-table w-100">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1
+                                            class="heading mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">
+                                            Made For Your Business</h1>
+                                        <p
+                                            class="para-desc mx-auto text-white-50 para-dark animated fadeInUpBig animation-delay-7">
+                                            River Crna leaves the Pelagonia valley at the Dobroveni village and goes in the biggest canyon in Macedonia, the Skočivir valley.</p>
+                                        <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-12">
+                                            <a href="javascript:void(0)" class="btn btn-custom me-2 mb-2">Buy Now</a>
+                                            <a href="javascript:void(0)" class="btn btn-outline-custom mb-2">Contact
+                                                us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end container-->
+                    </div>
+                </div>
+                <!--end carousel item-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--end section-->
+    <!-- Hero End -->
+    
 
 
 
