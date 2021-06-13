@@ -950,7 +950,7 @@ p {
 }
 .navbar-custom .navbar-brand {
   color: #fff !important;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 0.5px;
   font-family: "Muli", sans-serif;
 }
