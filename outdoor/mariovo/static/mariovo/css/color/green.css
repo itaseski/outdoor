@@ -29,7 +29,8 @@
 .service-wrapper:hover .icon,
 .container-filter li:hover,
 .container-filter li.active,
-.form-check-input:checked {
+.form-check-input:checked,
+.badge-custom {
   background-color: #3dd598 !important;
 }
 
@@ -59,7 +60,8 @@
 .footer .footer-list li a:hover,
 .footer .footer-recent .footer-recent-content a:hover,
 .restaurant-wraper .portfolio-box .menu-content .title a:hover,
-.navbar-custom .navbar-nav li.active a {
+.navbar-custom .navbar-nav li.active a,
+.badge2-custom {
   color: #3dd598 !important;
 }
 
@@ -104,7 +106,8 @@ a.text-custom:hover {
 .btn-outline-custom:active,
 .btn-outline-custom.active,
 .btn-outline-custom.focus,
-.btn-outline-custom:not(:disabled):not(.disabled):active {
+.btn-outline-custom:not(:disabled):not(.disabled):active,
+.badge-custom {
   box-shadow: 0 3px 7px rgba(61, 213, 152, 0.5) !important;
 }
 
