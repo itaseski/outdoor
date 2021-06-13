@@ -15,11 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#Add URL maps to redirect the base URL to our application
-from django.views.generic import RedirectView
 
 urlpatterns = [
     path('', include('nature.urls')),
-    path('', RedirectView.as_view(url='nature/', permanent=True)),
     path('admin/', admin.site.urls),
 ]
