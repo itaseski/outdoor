@@ -644,12 +644,12 @@ button:not(:disabled) {
   max-height: 25px;
 }
 .avatar.avatar-md-sm {
-  height: 45px;
-  width: 45px;
+  height:45px;
+  /*width: 45px;*/
 }
 .avatar.avatar-small {
   height: 60px;
-  width: 60px;
+  /*width: 60px;*/
 }
 .avatar.avatar-medium {
   height: 110px;
