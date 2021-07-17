@@ -18,7 +18,7 @@
     overflow: auto;
 }
 
-.info {
+/*.info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: rgba(255, 255, 255, 0.8);
@@ -30,8 +30,24 @@
 .info h4 {
     margin: 0 0 5px;
     color: #777777;
+}*/
+
+/*.info #village {
+    margin: 6px 0;
+}*/
+
+.info {
+    opacity: 0.5;
 }
 
-.info #village {
-    margin: 6px 0;
+.info:hover {
+    opacity: .8;
+}
+
+.info .card .card-text {
+    color: blueviolet;
+    height: 300px;
+    /*border: 2px solid #88d4d1;*/
+    padding: 0px;
+    overflow: auto;
 }
