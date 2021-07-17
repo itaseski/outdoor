@@ -18,7 +18,7 @@
     overflow: auto;
 }
 
-/*.info {
+.info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
     background: rgba(255, 255, 255, 0.8);
@@ -30,11 +30,11 @@
 .info h4 {
     margin: 0 0 5px;
     color: #777777;
-}*/
+}
 
-/*.info #village {
+.info #village {
     margin: 6px 0;
-}*/
+}
 
 .info {
     opacity: 0.5;
