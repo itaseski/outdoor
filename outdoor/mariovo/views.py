@@ -7,3 +7,7 @@ class HomeView(TemplateView):
 
 class MariovoRegionView(TemplateView):
     template_name = "mariovo/region.html"
+
+
+class LeadsView(TemplateView):
+    template_name = "mariovo/leads.html"

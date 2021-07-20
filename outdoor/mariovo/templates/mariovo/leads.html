@@ -1,0 +1,19 @@
+{% extends 'mariovo/base.html' %}
+{% load static %}
+<!-- Map show rouds leads to Mariovo region. -->
+{% block title %}
+Мариово - врски
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'mariovo/css/maps.css' %}">
+{% endblock %}
+
+{% block map%}
+<!--contaier for the interactive Leaflet map -->
+<div id="map"></div>
+{% endblock %}
+
+{% block js%}
+<script src="{% static 'mariovo/js/leads.js' %}"></script>
+{% endblock %}
